@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.top {
+  margin-top: 1.5rem;
+}
+
+/* Header section */
+.top .header {
+  text-align: center;
+}
+
+.header #profile__img {
+width: 10rem;
+height: 10rem;
+object-fit: cover;
+  border-radius: 50%;
+}
+
+.header #name {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: inherit;
+  margin-top: 1.5rem;
+  color: #101828;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* Body section */
+
