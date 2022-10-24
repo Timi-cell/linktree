@@ -22,7 +22,7 @@ class App extends Component {
         id: "books",
         content: "Zuri Books",
         link: "http://books.zuri.team/",
-        title: "Find books about design and coding",
+        title: "Find books about design and coding.",
       },
       ,
       {
@@ -35,12 +35,14 @@ class App extends Component {
         id: "pitch",
         content: "Background Check For Coders",
         link: "https://background.zuri.team/",
+        title: "Get a background check as a coder.",
       },
       ,
       {
         id: "book__design",
         content: "Design Books",
         link: "https://books.zuri.team/design-rules",
+        title: "Free design books offered by Zuri",
       },
     ],
   };
