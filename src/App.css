@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   gap: 2rem;
+  position: relative;
 }
 
 .flex-column {
@@ -23,7 +24,6 @@ body {
 .top {
   text-align: center;
   margin-top: 4rem;
-  position: relative;
 }
 
 /* Header section */
@@ -31,14 +31,18 @@ body {
 .top .header-section .share__icon {
   padding: 0.8rem 1rem;
   position: absolute;
-  top: -1.25rem;
-  right: 50rem;
+  right: 13rem;
+  top: -1.3rem;
   background: #ffffff;
   border: 0.06rem dashed #d0d5dd;
   border-radius: 50%;
   transition: all 0.5s ease;
 }
-.top .header-section .share__icon:hover {
+.top .header-section .dots__icon {
+  display: none;
+}
+.top .header-section .share__icon:hover,
+.top .header-section .dots__icon:hover {
   background: #f9fafb;
 }
 /* .top .header-section .share__icon:focus {
@@ -142,15 +146,92 @@ body {
   align-items: center;
   gap: 4rem;
   text-align: center;
-  width: 100rem;
-  margin-top: 4rem;
+  width: 90rem;
+  margin: 4rem 0 3rem 0;
   border-top: 0.06rem solid #667085;
-  padding-top: 1.5rem;
-  margin-bottom: 3rem;
+  padding: 3rem 1rem;
 }
 
 .footer-section p {
   font-weight: 400;
   color: #667085;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 860px) {
+  .footer-section {
+    width: 70rem;
+  }
+}
+
+/* MOBILE VIEW SECTION */
+@media screen and (max-width: 625px) {
+  body {
+    overflow-y: scroll;
+  }
+  /* mobile header section */
+  .top .header-section .image .camera #camera__icon {
+    width: 3rem;
+  }
+  .top .header-section .share__icon {
+    display: none;
+  }
+  .top .header-section .dots__icon {
+    display: block;
+    position: absolute;
+    top: -1.3rem;
+    right: 0.5rem;
+    padding: 2.5rem;
+    background: #ffffff;
+    border: 0.06rem dashed #d0d5dd;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s ease;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .top .header-section .dots__icon #dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .top .header-section .image #profile__img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .top .header-section #twitter {
+    font-size: 3rem;
+  }
+
+  /* mobile body section */
+  .body-section {
+    padding: 0 1.5rem;
+  }
+  .body-section button {
+    font-size: 2.5rem;
+    height: 10rem;
+  }
+  .body-section .social__icons {
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  .body-section .social__icons img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /* mobile footer section */
+  .footer-section {
+    flex-direction: column;
+    width: 100%;
+    margin: 4rem 0 3rem 0;
+    padding: 3rem 1rem;
+  }
+  .footer-section img {
+    width: 50%;
+  }
+  .footer-section p {
+    font-size: 2.5rem;
+  }
 }

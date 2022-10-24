@@ -6,6 +6,9 @@ const Header = () => {
       <div className="share__icon">
         <img src="./images/share.png" alt="share__icon" id="share" />
       </div>
+      <div className="dots__icon">
+        <img src="./images/dots.png" alt="dots"  id="dots"/>
+      </div>
       <div className="image">
         <img
           src="./images/avatar.JPEG"
