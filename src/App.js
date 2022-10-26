@@ -47,7 +47,7 @@ class App extends Component {
         title: "Free design books offered by Zuri",
       },
     ],
-    slackName: "Timi",
+    slackName: "TIMI",
   };
   render() {
     return (
