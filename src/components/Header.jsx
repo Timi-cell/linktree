@@ -3,12 +3,19 @@ import React from "react";
 const Header = ({ name }) => {
   return (
     <div className="header-section">
-      <div className="share__icon">
-        <img src="./images/share.png" alt="share__icon" id="share" />
+      <div className="share-section">
+        <div className="shareLink">
+          <p>Share Link</p>
+          <p id="arrow"></p>
+        </div>
+        <div className="share__icon">
+          <img src="./images/share.png" alt="share__icon" id="share" />
+        </div>
+        <div className="dots__icon">
+          <img src="./images/dots.png" alt="dots" id="dots" />
+        </div>
       </div>
-      <div className="dots__icon">
-        <img src="./images/dots.png" alt="dots" id="dots" />
-      </div>
+
       <div className="image">
         <img
           src="./images/avatar.JPEG"
