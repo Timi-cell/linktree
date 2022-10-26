@@ -47,12 +47,12 @@ class App extends Component {
         title: "Free design books offered by Zuri",
       },
     ],
-    slackName: "TIMI",
+    slackname: "Timi",
   };
   render() {
     return (
       <div className="top flex-column">
-        <Header name={this.state.slackName} />
+        <Header name={this.state.slackname} />
         <Body lists={this.state.list} />
         <Footer />
       </div>
