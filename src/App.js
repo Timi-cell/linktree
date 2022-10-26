@@ -16,6 +16,7 @@ class App extends Component {
         id: "btn_zuri",
         content: "Zuri Team",
         link: "https://training.zuri.team/",
+        title: "The Zuri Team",
       },
       ,
       {
@@ -28,7 +29,8 @@ class App extends Component {
       {
         id: "book__python",
         content: "Python Books",
-        link: "https://books.zuri.team/python-for-beginners?ref_id=",
+        link: `https://books.zuri.team/python-for-beginners?ref_id=Timi`,
+        title: "Python Books",
       },
       ,
       {
@@ -45,11 +47,12 @@ class App extends Component {
         title: "Free design books offered by Zuri",
       },
     ],
+    slackName: "Timi",
   };
   render() {
     return (
       <div className="top flex-column">
-        <Header />
+        <Header name={this.state.slackName} />
         <Body lists={this.state.list} />
         <Footer />
       </div>

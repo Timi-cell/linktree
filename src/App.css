@@ -37,6 +37,7 @@ body {
   border: 0.06rem dashed #d0d5dd;
   border-radius: 50%;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .top .header-section .dots__icon {
   display: none;
@@ -189,6 +190,7 @@ body {
     transition: all 0.5s ease;
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
   }
   .top .header-section .dots__icon #dots {
     position: absolute;

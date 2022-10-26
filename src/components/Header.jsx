@@ -1,13 +1,13 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ name }) => {
   return (
     <div className="header-section">
       <div className="share__icon">
         <img src="./images/share.png" alt="share__icon" id="share" />
       </div>
       <div className="dots__icon">
-        <img src="./images/dots.png" alt="dots"  id="dots"/>
+        <img src="./images/dots.png" alt="dots" id="dots" />
       </div>
       <div className="image">
         <img
@@ -21,7 +21,7 @@ const Header = () => {
         </div>
       </div>
       <h1 id="twitter">Oluwa Timilehin</h1>
-      <h2 id="slack">Timi</h2>
+      <h2 id="slack">{name}</h2>
     </div>
   );
 };
