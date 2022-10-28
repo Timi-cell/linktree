@@ -74,9 +74,6 @@ body {
 .top .header-section .share-section .dots__icon:hover {
   background: #f9fafb;
 }
-/* .top .header-section .share__icon:focus {
-  box-shadow: 0px 0px 0px 4px #f2f4f7;
-} */
 
 .top .header-section .image #profile__img {
   width: 15rem;
@@ -99,7 +96,6 @@ body {
 }
 .top .header-section .image #profile__img:hover {
   filter: brightness(0.6);
-  /* border: 0.1rem solid #ebe9fe; */
 }
 .top .header-section .image:hover > .camera #camera__icon {
   display: block;
@@ -114,50 +110,47 @@ body {
   margin-top: 1.5rem;
   color: #101828;
 }
-.header-section #slack {
+.top .header-section #slack {
   display: none;
 }
 /* Body section */
 .body-section {
   margin-top: 3rem;
-  padding: 0 9rem;
+  padding: 0 5rem;
 }
 
-.body-section button {
-  width: 100%;
-  font-weight: 500;
-  height: 5rem;
-  font-size: 1.8rem;
+.body-section .body__links a {
   background-color: #eaecf0;
-  border: 0.06rem solid #eaecf0;
   border-radius: 0.5rem;
-  padding: 1.5rem 2rem;
+  border: 0.06rem solid #eaecf0;
+  color: #101828;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  height: auto;
+  line-height: 3rem;
   margin-top: 1.5rem;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  width: 55rem;
 }
-/* .body-section button:focus {
-  border: 0.06rem solid #98a2b3;
-  box-shadow: 0 0.1rem 0.2rem rgba(16, 24, 40, 0.05), 0 0 0 0.3rem #ebe9fe;
-} */
-.body-section button:hover {
+
+.body-section .body__links a:hover {
   background-color: #d0d5dd;
   border: 0.06rem solid #d0d5dd;
   box-shadow: 0 0.1rem 0.15rem rgba(16, 24, 40, 0.05);
 }
-.body-section > div button:first-of-type {
+.body-section > div a:first-of-type {
   margin-top: 0;
 }
-.body-section a {
-  width: 6rem;
-  text-decoration: none;
-  color: #101828;
-  line-height: 1.75rem;
-}
+
 .body-section .social__icons {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 2.5rem;
 }
 
 .body-section .social__icons img {
@@ -251,11 +244,13 @@ body {
 
   /* mobile body section */
   .body-section {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
-  .body-section button {
+  .body-section .body__links a {
     font-size: 2.5rem;
-    height: 10rem;
+    padding: 2.5rem 3rem;
+    height: auto;
+    width: 50rem;
   }
   .body-section .social__icons {
     gap: 3rem;
@@ -269,7 +264,7 @@ body {
   /* mobile footer section */
   .footer-section {
     flex-direction: column;
-    width: 100%;
+    width: 50rem;
     margin: 4rem 0 3rem 0;
     padding: 3rem 1rem;
   }

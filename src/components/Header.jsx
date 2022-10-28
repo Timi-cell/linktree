@@ -19,7 +19,7 @@ const Header = ({ name }) => {
       <div className="image">
         <img
           src="./images/avatar.JPEG"
-          alt="profile__img"
+          alt="profileImage"
           id="profile__img"
           title="Profile image"
         />
@@ -27,7 +27,7 @@ const Header = ({ name }) => {
           <img src="./images/camera.png" alt="camera-icon" id="camera__icon" />
         </div>
       </div>
-      <h1 id="twitter">Oluwa Timilehin</h1>
+      <h1 id="twitter">_teeblaq10</h1>
       <h2 id="slack">{name}</h2>
     </div>
   );

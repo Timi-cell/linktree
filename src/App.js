@@ -7,47 +7,47 @@ class App extends Component {
   state = {
     list: [
       {
-        id: "twitter_page",
+        id: "twitter__page",
         content: "Twitter Link",
         link: "https://twitter.com/_teeblaq10",
-        title: "My Twitter Page",
       },
       {
-        id: "btn_zuri",
+        id: "btn__zuri",
         content: "Zuri Team",
         link: "https://training.zuri.team/",
-        title: "The Zuri Team",
       },
       ,
       {
         id: "books",
         content: "Zuri Books",
         link: "http://books.zuri.team/",
-        title: "Find books about design and coding.",
+        title: "Click here to discover books about design and coding.",
       },
       ,
       {
         id: "book__python",
         content: "Python Books",
-        link: `https://books.zuri.team/python-for-beginners?ref_id=Timi`,
-        title: "Python Books",
+        link: "https://books.zuri.team/python-for-beginners?ref_id=OluwaTimilehin",
+        title:
+          "Click here to get my books on the popular programming language, Python!.",
       },
       ,
       {
         id: "pitch",
         content: "Background Check For Coders",
         link: "https://background.zuri.team/",
-        title: "Get a background check as a coder.",
+        title:
+          "We offer the best services when it comes to background checks on coders.",
       },
       ,
       {
         id: "book__design",
         content: "Design Books",
         link: "https://books.zuri.team/design-rules",
-        title: "Free design books offered by Zuri",
+        title: "Click here to discover the free design books offered by Zuri.",
       },
     ],
-    slackname: "Timi",
+    slackname: "OluwaTimilehin",
   };
   render() {
     return (

@@ -3,19 +3,19 @@ import React from "react";
 const Body = ({ lists }) => {
   const displayLinks = () => {
     return (
-      <div>
+      <div className="body__links">
         {lists.map((list) => {
           return (
-            <button key={list.id} id={list.id}>
-              <a
-                href={`${list.link}`}
-                title={list.title}
-                rel="noopener"
-                target="_blank"
-              >
-                {list.content}
-              </a>
-            </button>
+            <a
+              href={list.link}
+              title={list.title}
+              key={list.id}
+              id={list.id}
+              rel="noopener"
+              target="_blank"
+            >
+              {list.content}
+            </a>
           );
         })}
       </div>
@@ -25,7 +25,7 @@ const Body = ({ lists }) => {
     <div className="body-section flex-column">
       {displayLinks()}
       <div className="social__icons">
-        <a href="https://app.slack.com/client/T041FKW3E20/D046204G9J9/rimeto_profile/U0464U6UK4J">
+        <a href="https://app.slack.com/client/T042F7V19Q8/D0486LUB6SE/rimeto_profile/U048KA6A1CH">
           <img src="./images/slack.png" alt="slack" />
         </a>
         <a href="https://github.com/timi-cell">
