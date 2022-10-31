@@ -116,7 +116,7 @@ body {
 /* Body section */
 .body-section {
   margin-top: 3rem;
-  padding: 0 5rem;
+  padding: 0 9rem;
 }
 
 .body-section .body__links a {
@@ -200,9 +200,6 @@ body {
 
 /* MOBILE VIEW SECTION */
 @media screen and (max-width: 625px) {
-  body {
-    overflow-y: scroll;
-  }
   /* mobile header section */
   .top .header-section .image .camera #camera__icon {
     width: 3rem;
@@ -217,7 +214,7 @@ body {
     display: block;
     position: absolute;
     top: -1.3rem;
-    right: 0.5rem;
+    right: 0;
     padding: 2.5rem;
     background: #ffffff;
     border: 0.06rem dashed #d0d5dd;
@@ -250,7 +247,7 @@ body {
     font-size: 2.5rem;
     padding: 2.5rem 3rem;
     height: auto;
-    width: 50rem;
+    width: 100%;
   }
   .body-section .social__icons {
     gap: 3rem;
@@ -264,7 +261,7 @@ body {
   /* mobile footer section */
   .footer-section {
     flex-direction: column;
-    width: 50rem;
+    width: auto;
     margin: 4rem 0 3rem 0;
     padding: 3rem 1rem;
   }
