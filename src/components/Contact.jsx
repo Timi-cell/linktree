@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 
-const Contact = () => {
+const Contact = ({ name }) => {
   return (
     <>
       <div className="contact flex-column">
@@ -50,8 +50,7 @@ const Contact = () => {
           <div className="check">
             <input type="checkbox" />
             <p>
-              You agree to providing your data to OluwaTimilehin who may contact
-              you.
+              You agree to providing your data to {name} who may contact you.
             </p>
           </div>
           <button type="submit" id="btn__submit">
