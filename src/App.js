@@ -46,16 +46,23 @@ class App extends Component {
         link: "https://books.zuri.team/design-rules",
         title: "Click here to discover the free design books offered by Zuri.",
       },
+      {
+        id: "contact",
+        content: "Contact Me",
+        link: "/contact",
+      },
     ],
     slackname: "OluwaTimilehin",
   };
   render() {
     return (
-      <div className="top flex-column">
-        <Header name={this.state.slackname} />
-        <Body lists={this.state.list} />
+      <>
+        <div className="top flex-column">
+          <Header name={this.state.slackname} />
+          <Body lists={this.state.list} />
+        </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }
