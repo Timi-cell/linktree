@@ -220,7 +220,7 @@ body {
 }
 .contact label {
   color: #344054;
-  line-height: 1.3rem;
+  line-height: 2.5rem;
   font-weight: 500;
   width: auto;
 }
@@ -275,13 +275,15 @@ body {
   box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05), 0 0 0 0.3rem #d1e9ff;
 }
 .contact .check {
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1rem;
-  margin-top: 1.5rem;
   color: #475467;
   font-size: 1rem;
 }
+
 .contact .check input[type="checkbox"] {
   border-radius: 0.5rem;
   border: 0.06rem solid #d0d5dd;
@@ -506,7 +508,7 @@ body {
     height: 2rem;
   }
 
-  .contact .contact--body .check p {
+  .contact .contact--body .check label {
     font-size: 1.5rem;
   }
   .contact .contact--body .top_details div input {
