@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import "./App.css";
 import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const user_name = "OluwaTimilehin";
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/contact" element={<Contact name={user_name} />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 );

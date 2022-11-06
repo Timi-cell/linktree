@@ -193,7 +193,6 @@ body {
 
 /* Contact page section */
 .contact {
-  padding: 0;
   justify-content: center;
   align-items: stretch;
   padding: 0 25vw;
@@ -333,6 +332,75 @@ body {
     padding: 0 15vw;
   }
 }
+
+/* Error page section */
+
+.error--section {
+  padding: 10vw 25vw 6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 15rem;
+}
+.error--section h1 {
+  color: #101828;
+  font-size: 5rem;
+  letter-spacing: -0.05rem;
+  line-height: 5rem;
+  font-weight: 600;
+}
+.error--section p:first-of-type {
+  color: #1570ef;
+  line-height: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.error--section p:last-of-type {
+  color: #475467;
+  line-height: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.error--section a {
+  text-decoration: none;
+}
+.error--section button {
+  width: 15rem;
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  outline: none;
+  text-align: center;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+}
+.error--section .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.error--section .buttons #first__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  border: 0.06rem solid #d0d5dd;
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05);
+  color: #344054;
+  background: transparent;
+}
+
+.error--section .buttons #second__button {
+  background: #1570ef;
+  border: 0.06rem solid #1570ef;
+  color: #fff;
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05);
+}
 /* MOBILE VIEW SECTION */
 @media screen and (max-width: 625px) {
   /* mobile header section */
@@ -452,5 +520,31 @@ body {
   }
   .contact #btn__submit {
     margin-bottom: 3rem;
+  }
+  /* mobile error page section */
+
+  .error--section {
+    padding: 50% 2rem 5% 2rem;
+  }
+  .error--section h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .error--section p:first-of-type {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+  .error--section p:last-of-type {
+    line-height: 3rem;
+    font-size: 2.5rem;
+  }
+  .error--section button,
+  .error--section a {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .error--section .buttons {
+    flex-direction: column-reverse;
+    width: 100%;
   }
 }
