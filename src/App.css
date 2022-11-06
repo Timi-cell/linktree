@@ -232,8 +232,14 @@ body {
   border-radius: 0.5rem;
   margin-top: 0.5rem;
   border: 0.06rem solid #d0d5dd;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05);
+  transition: all 0.3s ease-in-out;
 }
+.contact input:focus {
+  border: 0.06rem solid #84caff;
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05);
+}
+
 .contact input[type="email"],
 .contact input[type="text"] {
   width: 100%;
@@ -261,32 +267,52 @@ body {
   font-size: 1.8rem;
   padding: 1.2rem 1rem;
   border: 0.06rem solid #d0d5dd;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05);
   border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.contact #message:focus {
+  border: 0.06rem solid #84caff;
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05), 0 0 0 0.3rem #d1e9ff;
 }
 .contact .check {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 1rem;
-
   margin-top: 1.5rem;
   color: #475467;
   font-size: 1rem;
 }
+.contact .check input[type="checkbox"] {
+  border-radius: 0.5rem;
+  border: 0.06rem solid #d0d5dd;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .contact #btn__submit {
   background: #1570ef;
   border: 0.06rem solid #1570ef;
   box-shadow: 0 0.06rem 0.125rem rgba(16, 24, 40, 0.05);
   outline: none;
-  margin-top: 3rem;
+  margin: 3rem 0 10rem 0;
   padding: 1.3rem;
   font-size: 1.8rem;
   width: 100%;
   border: none;
   color: #fff;
   border-radius: 0.5rem;
-  margin-bottom: 10rem;
+  transition: all 0.3s ease-in-out;
+}
+.contact #btn__submit:hover {
+  background: #175cd3;
+  border: 0.06rem solid #175cd3;
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05);
+}
+.contact #btn__submit:focus {
+  background: #1570ef;
+  border: 0.06rem solid #1570ef;
+  box-shadow: 0 0.06rem 0.13rem rgba(16, 24, 40, 0.05), 0 0 0 0.3rem #d1e9ff;
 }
 .contact input,
 .contact textarea,
@@ -395,6 +421,7 @@ body {
   .contact .contact--heading p {
     font-size: 2rem;
   }
+
   .contact .contact--body .top_details {
     display: block;
   }
@@ -406,6 +433,11 @@ body {
   .contact #btn__submit {
     font-size: 2rem;
   }
+  .contact .check input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .contact .contact--body .check p {
     font-size: 1.5rem;
   }
